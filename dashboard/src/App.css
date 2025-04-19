@@ -1,49 +1,90 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #f5f5f5);
   margin: 0;
   padding: 0;
 }
 
 .container {
-  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
 }
 
 .grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .card {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  width: 220px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
 }
 
 .card h3 {
-  margin-top: 0;
+  margin: 0 0 10px;
+  color: #1a237e;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #555;
 }
 
 .table {
   width: 100%;
-  margin-top: 20px;
   border-collapse: collapse;
-}
-
-.table th, .table td {
-  padding: 8px;
-  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .table th {
-  background-color: #eee;
+  background-color: #1976d2;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 15px;
+  }
+
+  .table td, .table th {
+    font-size: 14px;
+  }
 }
