@@ -95,3 +95,24 @@ Verás los nodos conectados, su uso de CPU/RAM y el histórico de tareas en vivo
    🪟 Windows 11
    🎯 Visual Studio Code
 
+---
+## Variables de entorno (.env)
+Ejemplo:
+
+``` env
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+SQL_SERVER=localhost
+SQL_DB=DistributedSystem
+SQL_USER=admin
+SQL_PASSWORD=admin1234
+
+```
+Coloca este archivo en dashboard/backend/ y coordinator/.
+---
+## Autora
+Maria José Solís García 
+1° Proyecto  - I Semestre 2025
+Sistema Distribuido con Monitoreo Automático de Recursos y Procesamiento Cooperativo 
+Curso: Sistemas Operativos
