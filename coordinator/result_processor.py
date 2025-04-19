@@ -1,7 +1,8 @@
 import json
 import time
-from coordinator.redis_client import get_redis_connection
-from coordinator.database import insert_task_log
+from redis_client import get_redis_connection
+from database import insert_task_log
+
 
 def start_result_processor():
     redis_conn = get_redis_connection()

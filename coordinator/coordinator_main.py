@@ -1,6 +1,13 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import time
-from coordinator.task_scheduler import assign_task
-from coordinator.database import insert_task_log
+from task_scheduler import assign_task
+from result_processor import start_result_processor
+from database import insert_task_log
+import threading
+
 
 def main():
     print("🚀 Coordinador iniciado...")

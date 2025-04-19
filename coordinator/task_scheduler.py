@@ -1,6 +1,7 @@
 import random
 import json
-import coordinator.result_processor as get_redis_connection
+from redis_client import get_redis_connection
+import json
 redis_conn = get_redis_connection()
 
 def get_available_nodes():
