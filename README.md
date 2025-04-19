@@ -47,7 +47,7 @@ Visual Studio Code
     cd ../frontend
     npm install
     ```
-4.Configura SQL Server
+4. Configura SQL Server
    ```sql
     CREATE DATABASE DistributedSystem;
       GO
@@ -60,4 +60,21 @@ Visual Studio Code
           Result NVARCHAR(MAX),
           Timestamp DATETIME DEFAULT GETDATE()
       );
- ```
+    ```
+   ---
+## 🧪 Ejecución
+Opción rápida ✅
+Haz doble clic en el archivo:
+``` bash
+iniciar_sistema_completo.bat
+```
+Esto abrirá:
+   - Redis
+   - Backend (FastAPI)
+   - Frontend (React)
+   - Coordinador
+   - Nodos nodo1 y nodo2
+
+Opción manual
+- Puedes correr cada parte en terminales separadas si lo deseas.
+
