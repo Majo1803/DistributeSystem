@@ -1,12 +1,11 @@
-import threading
-import sys
 from agents.monitor import start_monitoring
 from agents.task_executor import start_executing_tasks
-
+import threading
+import sys
 
 def main():
     if len(sys.argv) < 2:
-        print("❌ Debes especificar el ID del nodo (ej: python agent.py nodo1)")
+        print("❌ Debes especificar el ID del nodo (ej: python -m agents.agent nodo1)")
         return
 
     node_id = sys.argv[1]
