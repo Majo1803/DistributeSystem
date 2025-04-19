@@ -77,4 +77,21 @@ Esto abrirá:
 
 Opción manual
 - Puedes correr cada parte en terminales separadas si lo deseas.
+---
+## 🌐 Acceder al dashboard
+Abrir en el navegador:
+``` bash
+http://localhost:3000
+```
+Verás los nodos conectados, su uso de CPU/RAM y el histórico de tareas en vivo.
+
+---
+## 🧠 Tecnologías usadas
+   🐍 Python 3.10
+   ⚙️ FastAPI
+   🟢 Redis
+   📊 React
+   🧠 SQL Server
+   🪟 Windows 11
+   🎯 Visual Studio Code
 
