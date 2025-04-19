@@ -1,0 +1,4 @@
+redis
+pyodbc
+psutil
+python-dotenv
