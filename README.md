@@ -23,3 +23,22 @@ DistributeSystem/
 ├── Redis-x64-5.0.14.1/    ← Redis local
 ├── iniciar_sistema_completo.bat ← Script para iniciar todo
 └── .env                   ← Variables de entorno
+```
+---
+##⚙️ Requisitos
+Windows 11
+Python 3.10+
+Node.js (v18+)
+Redis (ya incluido)
+SQL Server + SQL Server Management Studio
+Visual Studio Code
+---
+##📦 Instalación
+1. Clona el proyecto
+2. Instala dependencias del backend
+   ```bash
+   cd dashboard/backend
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+ ```
