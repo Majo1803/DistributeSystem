@@ -25,7 +25,7 @@ DistributeSystem/
 └── .env                   ← Variables de entorno
 ```
 ---
-##⚙️ Requisitos
+## ⚙️ Requisitos
 Windows 11
 Python 3.10+
 Node.js (v18+)
@@ -33,7 +33,7 @@ Redis (ya incluido)
 SQL Server + SQL Server Management Studio
 Visual Studio Code
 ---
-##📦 Instalación
+## 📦 Instalación
 1. Clona el proyecto
 2. Instala dependencias del backend
    ```bash
@@ -97,19 +97,19 @@ Verás los nodos conectados, su uso de CPU/RAM y el histórico de tareas en vivo
 
 ---
 ## Variables de entorno (.env)
-Ejemplo:
+   Ejemplo:
 
-``` env
-REDIS_HOST=localhost
-REDIS_PORT=6379
-
-SQL_SERVER=localhost
-SQL_DB=DistributedSystem
-SQL_USER=admin
-SQL_PASSWORD=admin1234
-
-```
-Coloca este archivo en dashboard/backend/ y coordinator/.
+   ``` env
+   REDIS_HOST=localhost
+   REDIS_PORT=6379
+   
+   SQL_SERVER=localhost
+   SQL_DB=DistributedSystem
+   SQL_USER=admin
+   SQL_PASSWORD=admin1234
+   
+   ```
+   Coloca este archivo en dashboard/backend/ y coordinator/.
 ---
 ## Autora
 Maria José Solís García 
