@@ -41,4 +41,23 @@ Visual Studio Code
    python -m venv venv
    venv\Scripts\activate
    pip install -r requirements.txt
+    ```
+3. Instala dependencias del frontend
+    ```bash
+    cd ../frontend
+    npm install
+    ```
+4.Configura SQL Server
+   ```sql
+    CREATE DATABASE DistributedSystem;
+      GO
+      USE DistributedSystem;
+      
+      CREATE TABLE TaskHistory (
+          ID INT IDENTITY(1,1) PRIMARY KEY,
+          NodeID NVARCHAR(50),
+          TaskType NVARCHAR(50),
+          Result NVARCHAR(MAX),
+          Timestamp DATETIME DEFAULT GETDATE()
+      );
  ```
