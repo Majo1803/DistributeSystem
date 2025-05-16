@@ -1,6 +1,16 @@
-import React from 'react';
+import React from "react";
 
-function NodeCard({ node }) {
+function NodeCard({ node, compact }) {
+  if (compact) {
+    return (
+      <div className="node-compact-card">
+        <h4 style={{ margin: "0 0 4px 0" }}>🖥️ {node.id}</h4>
+        <div>CPU: {node.cpu?.toFixed(1)}%</div>
+        <div>RAM: {node.ram?.toFixed(1)}%</div>
+      </div>
+    );
+  }
+
   return (
     <div className="card">
       <h3>🖥️ {node.id}</h3>
